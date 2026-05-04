@@ -5,65 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logan Glaze Portfolio</title>
 
-  <!-- FIXED CSS PATH -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- TAILWIND CDN (this bypasses your broken CSS file) -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-slate-900 text-white">
 
-<header>
-  <h1>Logan Glaze</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#work">Work</a>
-    <a href="#coursework">Coursework</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#process">Process</a>
-    <a href="#contact">Contact</a>
+<header class="flex justify-between items-center p-6 bg-slate-800">
+  <h1 class="text-xl font-bold">Logan Glaze</h1>
+  <nav class="space-x-4">
+    <a href="#about" class="hover:text-sky-400">About</a>
+    <a href="#skills" class="hover:text-sky-400">Skills</a>
+    <a href="#work" class="hover:text-sky-400">Work</a>
+    <a href="#contact" class="hover:text-sky-400">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h2>Creative Developer, Designer & Photographer</h2>
-  <p>build modern web experiences, interactive systems, and visual storytelling photography.</p>
-  <a href="#work">View My Work</a>
+<section class="text-center py-24">
+  <h2 class="text-4xl font-bold mb-4">Creative Developer & Designer</h2>
+  <p class="text-slate-400 mb-6">Building modern web experiences and visual storytelling.</p>
+  <a href="#work" class="bg-sky-400 text-black px-6 py-2 rounded font-bold">View Work</a>
 </section>
 
-<section id="about">
-  <h2>About Me</h2>
+<section id="about" class="px-10 py-16">
+  <h2 class="text-2xl font-bold mb-4">About Me</h2>
 
-  <!-- FIXED IMAGE PATH -->
-  <img src="assets/images/profile/portrait.jpg" alt="Portrait of Logan Glaze">
+  <!-- REMOVE IMAGE FOR NOW (avoids broken path issue) -->
+  <!-- add it back later once paths are fixed -->
 
-  <p>I’m Logan Glaze, a creative developer and photographer focused on building clean, modern digital experiences.</p>
-  <p>My work blends coding, design, and photography into structured visual systems that communicate ideas clearly.</p>
+  <p class="text-slate-300">
+    I’m Logan Glaze, a creative developer focused on building clean, modern digital experiences.
+  </p>
 </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>JavaScript</li>
-    <li>UI/UX Design</li>
-    <li>Photography</li>
-    <li>Game Design</li>
-  </ul>
+<section id="skills" class="px-10 py-16">
+  <h2 class="text-2xl font-bold mb-4">Skills</h2>
+  <div class="flex flex-wrap gap-3">
+    <span class="bg-slate-700 px-4 py-2 rounded">HTML</span>
+    <span class="bg-slate-700 px-4 py-2 rounded">CSS</span>
+    <span class="bg-slate-700 px-4 py-2 rounded">JavaScript</span>
+    <span class="bg-slate-700 px-4 py-2 rounded">UI/UX</span>
+  </div>
 </section>
 
-<section id="coursework">
-  <h2>Coursework & Academic Projects</h2>
-
-  <h3>Web Design (CS 3380)</h3>
-  <p>Built responsive websites focusing on layout systems, typography, accessibility, and modern UI structure.</p>
-
-  <h3>Game Development (CS 3373)</h3>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Contact me for work or collaboration.</p>
+<section id="contact" class="px-10 py-16">
+  <h2 class="text-2xl font-bold mb-4">Contact</h2>
+  <p class="text-slate-400">Reach out for collaborations or work opportunities.</p>
 </section>
 
 </body>
