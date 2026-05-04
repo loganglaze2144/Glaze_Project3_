@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logan Glaze Portfolio</title>
 
-  <!-- TAILWIND CDN (this bypasses your broken CSS file) -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -21,23 +20,29 @@
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="text-center py-24">
   <h2 class="text-4xl font-bold mb-4">Creative Developer & Designer</h2>
   <p class="text-slate-400 mb-6">Building modern web experiences and visual storytelling.</p>
   <a href="#work" class="bg-sky-400 text-black px-6 py-2 rounded font-bold">View Work</a>
 </section>
 
-<section id="about" class="px-10 py-16">
+<!-- ABOUT -->
+<section id="about" class="px-10 py-16 text-center">
   <h2 class="text-2xl font-bold mb-4">About Me</h2>
 
-  <!-- REMOVE IMAGE FOR NOW (avoids broken path issue) -->
-  <!-- add it back later once paths are fixed -->
+  <img 
+    src="assets/images/profile/headshot.jpg" 
+    alt="Photo of Logan Glaze"
+    class="w-40 h-40 object-cover rounded-full mx-auto mb-6"
+  >
 
-  <p class="text-slate-300">
+  <p class="text-slate-300 max-w-xl mx-auto">
     I’m Logan Glaze, a creative developer focused on building clean, modern digital experiences.
   </p>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="px-10 py-16">
   <h2 class="text-2xl font-bold mb-4">Skills</h2>
   <div class="flex flex-wrap gap-3">
@@ -48,9 +53,38 @@
   </div>
 </section>
 
-<section id="contact" class="px-10 py-16">
+<!-- WORK -->
+<section id="work" class="px-10 py-16">
+  <h2 class="text-2xl font-bold mb-6">My Work</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <div>
+      <img src="assets/images/projects/project1.jpg" class="rounded mb-2 w-full h-48 object-cover">
+      <p>Project One</p>
+    </div>
+
+    <div>
+      <img src="assets/images/projects/project2.jpg" class="rounded mb-2 w-full h-48 object-cover">
+      <p>Project Two</p>
+    </div>
+
+    <div>
+      <img src="assets/images/projects/project3.jpg" class="rounded mb-2 w-full h-48 object-cover">
+      <p>Project Three</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-10 py-16 text-center">
   <h2 class="text-2xl font-bold mb-4">Contact</h2>
-  <p class="text-slate-400">Reach out for collaborations or work opportunities.</p>
+  <p class="text-slate-400 mb-4">Reach out for collaborations or work opportunities.</p>
+
+  <a href="mailto:your@email.com" class="bg-sky-400 text-black px-6 py-2 rounded font-bold">
+    Email Me
+  </a>
 </section>
 
 </body>
